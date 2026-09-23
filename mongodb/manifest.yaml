@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongodb
-  Namespace: roboshop
+  namespace: roboshop
   # these are replica set labels
   labels:
        project: roboshop
@@ -26,4 +26,4 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: devtejd/mongodb
+        image: devtejd/mongodb:v1
